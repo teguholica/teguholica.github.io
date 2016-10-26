@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "Launch My Github Pages"
-date: 2014-04-30
+date: 2016-10-26
 ---
 
-Well. Finally got around to putting this old website together. Neat thing about it - powered by [Jekyll](http://jekyllrb.com) and I can use Markdown to author my posts. It actually is a lot easier than I thought it was going to be.
+Blog ini dibuat menggunakan jekyll dengan bantuan dari tutorial berikut
+[Creating and Hosting a Personal Site on GitHub](http://jmcglone.com/guides/github-pages/)

@@ -1,11 +1,20 @@
 ---
 layout: default
-title: Teguh Arifianto's Blog
+title: Blog
 ---
-<h1>{{ page.title }}</h1>
-<ul class="posts">
-
-  {% for post in site.posts %}
-    <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
-  {% endfor %}
-</ul>
+{% for post in site.posts %}
+<div class="article">
+  <div class="title">
+    {{ post.title }}
+  </div>
+  <div class="info">
+     {{ post.date | date_to_string }}
+  </div>
+  <div class="post">
+    {{ post.content | truncatewords: 300 }}
+  </div>
+  <div class="action">
+    <a href="{{ post.url }}">Baca Lengkap</a>
+  </div>
+</div>
+{% endfor %}
