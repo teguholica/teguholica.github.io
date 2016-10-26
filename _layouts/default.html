@@ -2,23 +2,37 @@
 	<html>
 		<head>
 			<title>{{ page.title }}</title>
-			<!-- link to main stylesheet -->
+      <link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" type="text/css">
 			<link rel="stylesheet" type="text/css" href="/css/main.css">
 		</head>
 		<body>
-			<nav>
-	    		<ul>
-	        		<li><a href="/">Home</a></li>
-              <li><a href="/blog">Blog</a></li>
-		        	<li><a href="/lab">Lab</a></li>
-	        		<li><a href="/about_me">About Me</a></li>
-	    		</ul>
-			</nav>
-			<div class="container">
-
-			{{ content }}
-
-			</div><!-- /.container -->
+      <div id="header_separator"></div>
+      <div id="outer_wrapper">
+        <div id="header_title">
+          <div id="title">TEGUH ARIFIANTO</div>
+          <div id="subtitle">aka teguholica</div>
+        </div>
+        <div id="search">
+          <form action="index.html" method="post">
+            <input type="text" placeholder="&#xF002;"/>
+          </form>
+        </div>
+        <div id="menu">
+          <div class="separator"></div>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/lab">Lab</a></li>
+            <li><a href="/about_me">About Me</a></li>
+          </ul>
+        </div>
+        <div id="content">
+          {{ content }}
+        </div>
+      </div>
 			<footer>
 	    		<ul>
 	        		<li><a href="mailto:teguholica@gmail.com">email</a></li>
